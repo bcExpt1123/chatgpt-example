@@ -1,5 +1,7 @@
 # ChatGPT Example
 
+![Screenshot](./screenshots/1.png)
+
 ### Frontend
 
 - `create-react-app`
