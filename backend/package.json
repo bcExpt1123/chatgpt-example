@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "chatgpt-backend",
   "version": "1.0.0",
   "description": "ChatGPT API",
   "main": "index.js",
