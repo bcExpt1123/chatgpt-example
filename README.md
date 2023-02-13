@@ -1,6 +1,6 @@
 # ChatGPT Example
 
-![Screenshot](./screenshots/1.png)
+![Screenshot](./screenshots/1.gif)
 
 ### Frontend
 
