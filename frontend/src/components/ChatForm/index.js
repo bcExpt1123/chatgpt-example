@@ -1,6 +1,6 @@
 import { AudioOutlined, PaperClipOutlined } from "@ant-design/icons";
 import { Button, Form, Input } from "antd";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchMessage } from "../../actions/chatActions";
 import styles from "./style";
@@ -15,14 +15,16 @@ const ChatForm = () => {
       return;
     }
     dispatch(fetchMessage(event.target.value));
-
-    // To run in next cycle.
-    setTimeout(() => {
-      messageInputRef.current.focus();
-    }, 0);
-
     chatForm.resetFields();
   };
+  useEffect(() => {
+    if (!loading) {
+      // To run in next cycle.
+      setTimeout(() => {
+        messageInputRef.current.focus();
+      }, 0);
+    }
+  }, [loading]);
   return (
     <Form layout="inline" form={chatForm} name="message-form" style={styles.formStyle}>
       <Form.Item style={styles.inputStyle} name="message">

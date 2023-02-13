@@ -27,9 +27,12 @@ const ChatView = () => {
   }, [copied]);
   useEffect(() => {
     if (messages.length) {
-      messageRefs.current[messages.length - 1].current.scrollIntoView({
-        behavior: "smooth",
-      });
+      // change scroll in next cycle
+      setTimeout(() => {
+        messageRefs.current[messages.length - 1].current.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 1);
     }
     if (error && !loading) {
       messageApi.open({
