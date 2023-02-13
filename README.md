@@ -2,6 +2,8 @@
 
 ![Screenshot](./screenshots/1.gif)
 
+[Video](./screenshots/1.mp4)
+
 ### Frontend
 
 - `create-react-app`
