@@ -19,7 +19,7 @@ app.post('/chat', async (req,res)=>{
             model:"text-davinci-003",
             prompt: `${message}`,
             temperature: 0.7,
-            max_tokens: 100 
+            max_tokens: 2048
         });
          res.json({
             message:response.data.choices[0].text

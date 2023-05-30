@@ -57,7 +57,10 @@ const ChatView = () => {
             style={msg.type === "a" ? styles.receivedMsgStyle : styles.sentMsgStyle}
             align="start"
           >
-            <div style={styles.msgTextStyle}>{msg.text}</div>
+            <div
+              style={styles.msgTextStyle}
+              dangerouslySetInnerHTML={{ __html: msg.text.replace(/\n/g, "<br />") }}
+            ></div>
             {msg.type === "a" ? (
               <CopyToClipboard onCopy={() => setCopied(true)} text={msg.text}>
                 <CopyOutlined />
