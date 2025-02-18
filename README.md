@@ -4,60 +4,100 @@
 
 [Video](./screenshots/1.mp4)
 
-### Frontend
+## Overview
 
-- `create-react-app`
-- `redux-toolkit`
-- `redux-saga`
-- `Ant Design`
+This repository is an example project demonstrating the integration of ChatGPT using a React frontend and Express backend.
 
-### Backend
+### Key Features
 
-- `Express`
-- `OpenAIAPI`
+- **Frontend:**
+  - Built with `create-react-app`
+  - State management with `redux-toolkit`
+  - Side effects handling with `redux-saga`
+  - UI components styled with `Ant Design`
 
-### Homepage
+- **Backend:**
+  - Server created with `Express`
+  - Integration with `OpenAI API` for ChatGPT functionality
 
-https://github.com/bcExpt1123/chatgpt-example/blob/main/README.md
+## Table of Contents
 
-### Bugs
+- [Installation](#installation)
+- [Development](#development)
+- [Production](#production)
+- [Contributing](#contributing)
+- [License](#license)
 
-https://github.com/bcExpt1123/chatgpt-example/issues
+## Installation
 
-### Author
+### Prerequisites
 
-[bcExpt1123](https://github.com/bcExpt1123)
+- Node.js
+- npm or yarn
 
-## How to run project.
+### Steps
 
-### Development 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/bcExpt1123/chatgpt-example.git
+   cd chatgpt-example
 
-- backend
+2. Install dependencies for both frontend and backend:
+  ```bash
+  cd backend
+  npm install
+  cd ../frontend
+  npm install
+  ```
 
-  `cd backend`
+## Development
 
-  `npm i`
+### Running the Backend
 
-  `npm run dev`
-  
-  or
+Navigate to the backend directory and start the development server:
+  ```bash
+  cd backend
+  npm run dev
+  # or
+  yarn dev
+  ```
 
-  `yarn dev`
+### Running the Frontend
 
-- frontend
+Navigate to the frontend directory and start the development server:
+  ```bash
+  cd frontend
+  npm start
+  # or
+  yarn start
+  ```
 
-  `cd frontend`
+## Production
 
-  `npm i`
+### Building and Running the Backend
 
-  `yarn start`
+```bash
+cd backend
+npm run start
+```
 
-### Production
+### Building and Running the Frontend
 
-- backend
+```bash
+cd frontend
+npm run build
+```
 
-  `npm run start`
+## Contributing
 
-- frontend
+Contributions are welcome! Please open an issue or submit a pull request.
 
-  `npm run build`
+## License
+
+This project is licensed under the MIT License.
+
+## Additional Resources
+
+- [Homepage](https://github.com/bcExpt1123/chatgpt-example/blob/main/README.md)
+- [Report Issues](https://github.com/bcExpt1123/chatgpt-example/issues)
+- [Author](https://github.com/bcExpt1123)
